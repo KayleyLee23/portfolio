@@ -45,3 +45,38 @@ h1 {
 .card:hover {
   transform: translateY(-5px);
 }
+
+.room {
+  margin-top: 60px;
+}
+
+.computer {
+  width: 150px;
+  height: 100px;
+  background-color: #c4b5fd;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.computer:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.label {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #4c1d95;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.computer:hover .label {
+  opacity: 1;
+}
